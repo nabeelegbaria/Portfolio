@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabeel - Portfolio</title>
-    <link rel="stylesheet" href="css/styles">
-    <link rel="stylesheet" href="css/home_section_style">
-    <link rel="stylesheet" href="css/about_me_section_style">
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home_section_style.css">
+    <link rel="stylesheet" href="css/about_me_section_style.css">
+    <link rel="stylesheet" href="css/section_divider_style.css">
+    <link rel="stylesheet" href="css/header_style.css">
 </head>
 <body>
-    <header>
+    <header class="base-header">
         <nav>
-            <ul>
+            <ul  class="header-ul">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -21,14 +22,13 @@
             </ul>
         </nav>
     </header>
-     
-
+    
 
     <!-- Home section -->
     <section id="home">
         <div class="home-content">
             <div class="header-content">
-                <h1 class="header-item" id="first-item">I'm ...</h1>
+                <h1 class="header-item" id="first-item">I'm</h1>
                 <h1 class="header-item" id="second-item">
                     <span class="name">
                         <span id="typing-text"> Nabeel Egabria
@@ -43,10 +43,24 @@
         </div>
     </section>
     
+    <!-- Divider between Home and About me sections -->
+    <svg class="section-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 90">
+        <defs>
+            <clipPath id="b">
+                <rect width="1920" height="90"/>
+            </clipPath>
+        </defs>
+        <g id="a" clip-path="url(#b)">
+            <rect width="1920" height="90" fill="#2c3e50"/> 
+            <path d="M-75.5-17.353S71.727,58.694,485.519,61.4s574-39.163,791.843-39.163,654.853,67.942,654.853,67.942V-17.353Z" fill="#FDE2E2"/>
+        </g>
+    </svg>
+
+    <!-- About me section-->
     <section id="about">
         <div class="about-content">
-            <div>
-                <img src="images/coding.jpg" alt="Coding Image">
+            <div class="about-image">
+                <img src="images/coding.png" alt="Coding Image">
             </div>
             <div class="about-text">
                 <h>About Me</h>
