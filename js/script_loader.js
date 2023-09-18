@@ -13,3 +13,5 @@ function loadScripts() {
         document.body.appendChild(script);
     });
 }
+
+loadScripts();
