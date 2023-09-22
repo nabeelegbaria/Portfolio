@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/header_style.css">
         <link rel="stylesheet" href="css/home_style.css">
+        <link rel="stylesheet" href="css/about_me_style.css">
     </head>
 
  <!---------------------- header -------------------->
 
     <body>  
         <div id="header">
-            <div class="container">
+            
                 <nav>
                     <img src="images/logo2.png" class="logo">
                     <ul>
@@ -25,7 +26,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
+            
         </div>
 
  <!---------------------- home -------------------->
@@ -38,3 +39,67 @@
                 </div>
             </div>
         </div>
+                    
+ <!---------------------- about me -------------------->
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/WhatsApp Image 2023-09-22 at 21.26.01.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Engineer</span><br>Designing web/app applications</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android/IOS applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>HAAT Delivery 2021-current</span><br>Backend engineer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BS.c computer science</span><br> at the Hebrew University at Jerusalem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link")
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+
+</script>
+
+
+</body>
+</html>
