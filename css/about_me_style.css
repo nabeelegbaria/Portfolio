@@ -61,7 +61,8 @@
 }
 
 .tab-contents.active-tab{
-    display: block;
+    display: block; /*from above preperty by default its none, so text wont be displayed,
+                    by setting to block it will be displayed*/
 }
 
 .tab-contents ul li{
