@@ -5,15 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nabeel Website</title>
+        <!--styles-->
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/header_style.css">
         <link rel="stylesheet" href="css/home_style.css">
         <link rel="stylesheet" href="css/about_me_style.css">
         <link rel="stylesheet" href="css/services_style.css">
+        <link rel="stylesheet" href="css/portfolio_style.css">
 
+        <!--scripts-->
         <script src="js/about_me_script.js"></script> 
-        <!--https://kit.fontawesome.com/711e8eb097.js used in services section-->
-        <script src="https://kit.fontawesome.com/711e8eb097.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/711e8eb097.js" crossorigin="anonymous"></script><!-- used in services section-->
+
     </head>
 
     <body>  
@@ -43,37 +46,39 @@
                     
         <!---------------------- about me -------------------->
         <div id="about">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/WhatsApp Image 2023-09-22 at 21.26.01.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
+            <div class="about-container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/WhatsApp Image 2023-09-22 at 21.26.01.jpeg">
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Software Engineer</span><br>Designing web/app applications</li>
-                            <li><span>Web Development</span><br>Web app development</li>
-                            <li><span>App Development</span><br>Building Android/IOS applications</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>HAAT Delivery 2021-current</span><br>Backend engineer</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>BS.c computer science</span><br> at the Hebrew University at Jerusalem</li>
-                        </ul>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Software Engineer</span><br>Designing web/app applications</li>
+                                <li><span>Web Development</span><br>Web app development</li>
+                                <li><span>App Development</span><br>Building Android/IOS applications</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>HAAT Delivery 2021-current</span><br>Backend engineer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BS.c computer science</span><br> at the Hebrew University at Jerusalem</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,32 +86,68 @@
 
         <!---------------------- services -------------------->
         <div id="services">
-            <h1 class="subtitle">My Services</h1> <!-- subtitle deifned in about_me_style.css -->
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
-                    <h2>Web <br> Design</h2>
-                    <p>blah blah blah blah blah</p>
-                    <a href="#">Learn more</a>
+            <div class="services-container">
+                <h1 class="subtitle">My Services</h1> <!-- subtitle deifned in about_me_style.css -->
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
+                        <h2>Web <br> Design</h2>
+                        <p>blah blah blah blah blah</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
+                        <h2>Web Development</h2>
+                        <p>blah blah blah blah blah</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
+                        <h2>App Development</h2>
+                        <p>blah blah blah blah blah</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-question"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
+                        <h2>Problem Solving</h2>
+                        <p>blah blah blah blah blah</p>
+                        <a href="#">Learn more</a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
-                    <h2>Web Development</h2>
-                    <p>blah blah blah blah blah</p>
-                    <a href="#">Learn more</a>
+            </div>
+        </div>
+
+        <!---------------------- portfolio -------------------->
+        <div id="portfolio">
+            <div class="portfolio-container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/tictactoe.jpg" >
+                        <div class="layer">
+                            <h3>TicTacToe</h3>
+                            <p>blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/compiler.jpg" >
+                        <div class="layer">
+                            <h3>Compiler</h3>
+                            <p>blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/compiler.jpg" >
+                        <div class="layer">
+                            <h3>Any project</h3>
+                            <p>blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
-                    <h2>App Development</h2>
-                    <p>blah blah blah blah blah</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-question"></i> <!--https://kit.fontawesome.com/711e8eb097.js-->
-                    <h2>Problem Solving</h2>
-                    <p>blah blah blah blah blah</p>
-                    <a href="#">Learn more</a>
-                </div>
+                <a href="#" class="btn">See more</a>
             </div>
         </div>
 
