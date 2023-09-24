@@ -1,5 +1,9 @@
 #services{
-padding: 30px 0;
+    padding: 0 0;
+}
+
+.services-container{
+    padding: 2% 5%;
 }
 
 .services-list{

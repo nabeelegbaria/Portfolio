@@ -1,6 +1,9 @@
 #about{
-    padding: 20px 60px;
     color: #ababab;
+}
+
+.about-container{
+    padding: 2% 5%;
 }
 
 .row{
