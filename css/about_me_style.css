@@ -6,7 +6,7 @@
     padding: 2% 5%;
 }
 
-.row{
+.about-row{
     display: flex; /*get contents side by side*/
     justify-content: space-between;
     flex-wrap: wrap; 
